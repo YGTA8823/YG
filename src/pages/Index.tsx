@@ -22,7 +22,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-center">
             <div className="text-white text-sm">
-              © 2024 Kidus Adugna. All rights reserved.
+              © 2025 Yegetanew Tariku. All rights reserved.
             </div>
           </div>
         </div>
