@@ -1,43 +1,32 @@
 import { ProjectCard } from '@/components/ui/project-card';
 import { Button } from '@/components/ui/button';
 import { Mail } from 'lucide-react';
-import yegnaChat from '@/assets/yegna-chat-1.png';
-import parkingSystem from '@/assets/parking-system.png';
-import recordManagement from '@/assets/record-management.png';
-import bettingImage from '@/assets/betting.png';
-import loginImage from '@/assets/login.png';
-import placeholder from '/placeholder.svg';
 
 export const ProjectsSection = () => {
   const projects = [
     {
       title: "AI Based Mental Health Chatbot",
-      description: "An AI-powered chatbot designed to provide mental health support and guidance. Features natural language processing, conversation flow management, and integration with mental health resources.",
-      image: yegnaChat,
+      description: "AI-powered chatbot for mental health support with NLP and conversation management.",
       technologies: ["React", "Node.js", "Express", "MongoDB"]
     },
     {
       title: "School Management System",
-      description: "A comprehensive system for managing school operations including student records, attendance, grades, and administrative functions. Built with modern web technologies for scalability.",
-      image: parkingSystem,
+      description: "Web-based system for managing student records, attendance, and administrative functions.",
       technologies: ["React", "Node.js", "SQL", "Express"]
     },
     {
       title: "Customer Segmentation System",
-      description: "A data-driven system for segmenting customers based on behavior and demographics. Utilizes machine learning algorithms to provide insights for targeted marketing and personalized services.",
-      image: recordManagement,
+      description: "Data-driven customer segmentation using machine learning for targeted marketing insights.",
       technologies: ["Python", "SQL", "NoSQL", "React"]
     },
     {
-      title: "Digital Scent Technology (Research Project)",
-      description: "Research project exploring digital scent technology applications. Investigates the integration of olfactory interfaces with digital systems for enhanced user experiences.",
-      image: bettingImage,
+      title: "Digital Scent Technology Research",
+      description: "Research on digital scent technology and olfactory interfaces for enhanced user experiences.",
       technologies: ["Research", "System Analysis"]
     },
     {
-      title: "Knowledge Management System Research Project",
-      description: "Research focused on developing effective knowledge management systems. Explores methodologies for capturing, organizing, and disseminating organizational knowledge.",
-      image: loginImage,
+      title: "Knowledge Management System Research",
+      description: "Research on effective knowledge management systems and organizational knowledge dissemination.",
       technologies: ["Research", "System Design"]
     }
   ];
@@ -67,7 +56,6 @@ export const ProjectsSection = () => {
                 key={index}
                 title={project.title}
                 description={project.description}
-                image={project.image}
                 technologies={project.technologies}
                 className="animate-fade-in"
                 style={{
