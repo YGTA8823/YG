@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './button';
 import { cn } from '@/lib/utils';
-import kidusLogo from '@/assets/kidus-logo.png';
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -60,11 +59,9 @@ export const Navigation = () => {
 
           {/* Logo/Brand (left side) */}
           <div className="flex items-center">
-            <img
-              src={kidusLogo}
-              alt="Kidus Adugna Logo"
-              className="h-12 w-auto"
-            />
+            <span className="text-xl font-bold text-gradient">
+              Yegetanew Tariku
+            </span>
           </div>
 
           {/* Desktop Navigation (right side) */}
